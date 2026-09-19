@@ -1,0 +1,26 @@
+{
+  "name": "mongochat",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000M\u0000o\u0000n\u0000g\u0000o\u0000-\u0000C\u0000h\u0000a\u0000t\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SdmWorks7/Mongo-Chat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/SdmWorks7/Mongo-Chat/issues"
+  },
+  "homepage": "https://github.com/SdmWorks7/Mongo-Chat#readme",
+  "dependencies": {
+    "ejs": "^6.0.1",
+    "express": "^5.2.1",
+    "mongoose": "^9.10.1"
+  }
+}
