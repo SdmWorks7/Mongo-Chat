@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css"/>
+    <title>All Chats</title>
+</head>
+<form method="GET" action="/chats/new">
+    <button>New chat</button>
+</form>
+<body>
+    <% for(let chat of chats){ %>
+        <div class="chat">
+            <p>From: <strong><%= chat.from  %></strong></p>
+            <div class="msg">
+                <p><%= chat.msg %></p>
+                    <button>Edit</button>
+                </form>
+            </div>
+            <p>Recieved by: <strong><%= chat.to %></strong></p>
+            <p> <%= chat.created_at.toString().split(" ")[4]%></p>
+        </div>
+        <% } %>
+</body>
+</html>
