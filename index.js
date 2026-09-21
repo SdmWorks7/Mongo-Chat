@@ -59,6 +59,12 @@ app.put("/chats/:id",  async (req, res)=>{
     res.redirect("http://localhost:8000/chat");
 });
 
+app.delete("/chats/:id",  async (req, res)=>{
+    let {id} = req.params;
+    let editable = await Chat.findByIdAndDelete(id);
+    res.redirect("http://localhost:8000/chat");
+});
+
 // let chat1 = new Chat({
 //     from: "Aryan",
 //     to: "Saumyadeep",
